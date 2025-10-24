@@ -1,0 +1,6 @@
+<h2>Applicants</h2>
+{% for app in applications %}
+    <p>{{ app.applicant.username }} applied for {{ app.job.title }}</p>
+{% empty %}
+    <p>No applications yet.</p>
+{% endfor %}
